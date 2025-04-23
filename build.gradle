@@ -1,0 +1,32 @@
+// a project definition to import
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    //jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+}
+
+application {
+    mainClass.set('com.ncr.test.pyramid.OurProgram')
+    mainClass.set('com.ncr.test.pyramid.YourProgram')
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
