@@ -7,6 +7,10 @@ import com.ncr.test.pyramid.solver.PyramidSolver;
  * TASK: This is your 3rd task.
  * Please implement the class to satisfy the interface. *
  */
+
+/* Personally, I like the solution from the internet more.
+It is simpler to read and a bit faster than my work. But the code below is what I came up with so :D
+*/
 public class YourSolver2 implements PyramidSolver {
 
     @Override
