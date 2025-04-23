@@ -46,7 +46,7 @@ public class YourSolver2 implements PyramidSolver {
         }
 
         //find the maximum sum of the table
-        long maxSum = 0;
+        long maxSum = table[0][0];
         for (long value : table[0]) {
             if (value > maxSum) maxSum = value;
         }
